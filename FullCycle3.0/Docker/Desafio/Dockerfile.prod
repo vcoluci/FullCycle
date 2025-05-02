@@ -1,0 +1,21 @@
+#Use image base on Go
+FROM golang:1.20-alpine AS builder
+
+#define de work dir
+WORKDIR /app
+
+#Copy code Go to the container
+COPY main.go .
+
+#build the app
+RUN go build -ldflags="-s -w" -o myapp main.go
+
+#stage 2: create final image
+FROM scratch
+
+#copy binary of build stage
+COPY --from=builder /app/myapp  .
+
+#run the app
+CMD ["./myapp"]
+
