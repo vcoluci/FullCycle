@@ -13,3 +13,7 @@ As part of the solution, we see in the Dockerfile.prod the utilization of Multi 
 
 REPOSITORY              TAG       IMAGE ID       CREATED       SIZE
 vcolucidocker/desafio   prod      45297096fffd   8 hours ago   1.85MB
+
+This is the link of image on DockerHub:
+
+https://hub.docker.com/repository/docker/vcolucidocker/desafio/general
