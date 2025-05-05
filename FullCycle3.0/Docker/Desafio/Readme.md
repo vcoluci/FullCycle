@@ -16,4 +16,4 @@ vcolucidocker/desafio   prod      45297096fffd   8 hours ago   1.85MB
 
 This is the link of image on DockerHub:
 
-https://hub.docker.com/repository/docker/vcolucidocker/desafio/general
+https://hub.docker.com/repositories/vcolucidocker
